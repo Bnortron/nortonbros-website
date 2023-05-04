@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Norton Bros</title>
+</head>
+
+<body>
+    <!-- Navigation bar menu -->
+    <nav class="navbar">
+        <div class="logo"><img src="/images/logo-scaled.png" alt="logo"></div>
+        <ul>
+            <li><a href="#about-us">About</a><span class="navbar-divider">|</span></li>
+            <li><a href="#follow-us">Follow</a><span class="navbar-divider">|</span></li>
+            <li><a href="#contact-us">Contact</a><span class="navbar-divider">|</span></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Section -->
+    <div class="landing-section">
+        <div class="background-container">
+            <h1>Norton Bros </h1>
+            <h2 class="slogan">Foundations & Concrete Services</h2>
+            <div class="buttons">
+                <button class="nav-button" onclick="scrollToSection('forming')">Forming</button>
+                <button class="nav-button" onclick="scrollToSection('footings')">Footings</button>
+                <button class="nav-button" onclick="scrollToSection('repairs')">Repairs</button>
+                <button class="nav-button" onclick="scrollToSection('windows')">Windows</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container">
+        <div class="section" id="about-us" data-aos="zoom-in">
+            <h2>About Us</h2>
+            <div class="about-us">
+                <div class="button-container">
+                    <button class="btn" data-content-id="background">Our Background</button>
+                    <button class="btn" data-content-id="goal">Our Goal</button>
+                    <button class="btn" data-content-id="experience">Our Experience</button>
+                </div>
+                <div class="content-container" id="content-container">
+                    <div class="content" id="background">
+                        <img src="/images/team/owners-savannah.JPG" alt="Our Background" class="content-image">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis aliquam ex. Morbi sit
+                            amet turpis vitae lacus euismod varius sed eget massa. Sed consequat euismod nulla, in
+                            varius ex. Nunc congue magna ac est blandit feugiat. Cras sed turpis purus. Nam tellus
+                            velit, dictum at vulputate eu, tempor vitae justo. Nulla fringilla, diam eget vehicula
+                            ornare, mi tortor consectetur justo, in elementum magna felis sed lorem. Donec scelerisque
+                            velit eget massa ultricies, a vestibulum purus tempus. Suspendisse fermentum lacinia leo ac
+                            volutpat. In blandit facilisis ante elementum fringilla.</p>
+                    </div>
+                    <div class="content" id="goal">
+                        <img src="/images/team/ram-squad.PNG" alt="Our Goal" class="content-image">
+                        <p>Nam cursus gravida semper. Suspendisse at dignissim turpis. Aliquam gravida orci vitae ante
+                            iaculis consequat. Aliquam erat volutpat. Nunc mattis non metus vitae semper. Aliquam neque
+                            purus, maximus sit amet pulvinar ac, mollis sed ipsum. Nullam efficitur sodales tortor, id
+                            scelerisque ex tempus at. Donec hendrerit eleifend consequat. Morbi nisl sem, accumsan eu
+                            tempor sit amet, maximus vitae urna. Vivamus mattis mi mi, eu ullamcorper enim iaculis eu.
+                        </p>
+                    </div>
+                    <div class="content" id="experience">
+                        <img src="/images/blocks/back-to-back-1.JPG" alt="Our Experience" class="content-image">
+                        <p>Ut ut tellus vitae mauris condimentum volutpat sed at nibh. In hac habitasse platea dictumst.
+                            Morbi ut condimentum felis. Morbi aliquet fringilla sapien, sed condimentum sem tincidunt
+                            sed. Phasellus suscipit ante quis sem fringilla, eu lobortis tellus porttitor. Integer eget
+                            elementum felis. Cras pellentesque mollis sem, quis faucibus augue maximus tempus. In id
+                            ipsum nec ligula lacinia fringilla. Nulla ac aliquam risus, ut gravida augue. Donec cursus
+                            sed est at venenatis. Integer rhoncus gravida tortor, eget euismod sem viverra et. Vivamus
+                            nibh risus, lacinia ac dolor id, volutpat scelerisque tortor.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Why Us Section -->
+        <div class="why-us" id="why-us" data-aos="zoom-in">
+            <div class="reason">
+                <div class="reason-content">
+                    <!-- Icon -->
+                    <img src="/images/icons/heart-icon.png" alt="heart" class="why-us-reason">
+                    <!-- Text -->
+                    <h2>Reason 1</h2>
+                </div>
+                <div class="reason-content">
+                    <!-- Icon -->
+                    <img src="/images/icons/bulb-icon.png" alt="heart" class="why-us-reason">
+                    <!-- Text -->
+                    <h2>Reason 2</h2>
+                </div>
+                <div class="reason-content">
+                    <!-- Icon -->
+                    <img src="/images/icons/clock-icon.png" alt="heart" class="why-us-reason">
+                    <!-- Text -->
+                    <h2>Reason 3</h2>
+                </div>
+                <div class="reason-content">
+                    <!-- Icon -->
+                    <img src="/images/icons/users-icon.png" alt="heart" class="why-us-reason">
+                    <!-- Text -->
+                    <h2>Reason 4</h2>
+                </div>
+                <div class="reason-content">
+                    <!-- Icon -->
+                    <img src="/images/icons/globe-icon.png" alt="heart" class="why-us-reason">
+                    <!-- Text -->
+                    <h2>Reason 5</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forming Section -->
+        <div class="section" id="forming" data-aos="zoom-in">
+            <div class="gallery-container">
+                <div class="snap-scroll-container">
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/singles/panels.PNG" alt="Forming Image 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/team/panel-work-2.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/singles/single-poured-3.jpg" alt="Forming Image 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/blocks/back-to-back-1.JPG" alt="Forming Image 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/singles/single-pumping.JPG" alt="Forming Image 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-text">
+                    <div class="card">
+                        <h2>Forming</h2>
+                        <h2 class="card-description">Description 1</h2>
+                        <h2 class="card-description">Description 2</h2>
+                        <h2 class="card-description">Description 3</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footings Section -->
+        <div class="section" id="footings" data-aos="zoom-in">
+            <div class="gallery-container">
+                <div class="slide-text">
+                    <div class="card">
+                        <h2>Footings</h2>
+                        <h2 class="card-description">Description 1</h2>
+                        <h2 class="card-description">Description 2</h2>
+                        <h2 class="card-description">Description 3</h2>
+                    </div>
+                </div>
+                <div class="snap-scroll-container">
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/footings/footing-prep-1.JPG" alt="Forming Image 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/footings/footing-poured-2.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/footings/footing-unpoured-1.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/footings/footing-poured-1.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/footings/footing-covered.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <!-- additional slides -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Repairs Section -->
+        <div class="section" id="repairs" data-aos="zoom-in">
+            <div class="gallery-container">
+                <div class="snap-scroll-container">
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/team/team-saws.PNG" alt="Forming Image 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/roller-rink/roller-rink-before.PNG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <!-- additional slides -->
+                </div>
+                <div class="slide-text">
+                    <div class="card">
+                        <h2>Repairs</h2>
+                        <h2 class="card-description">Description 1</h2>
+                        <h2 class="card-description">Description 2</h2>
+                        <h2 class="card-description">Description 3</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Windows Section -->
+        <div class="section" id="windows" data-aos="zoom-in">
+            <div class="gallery-container">
+                <div class="slide-text">
+                    <div class="card">
+                        <h2>Windows</h2>
+                        <h2 class="card-description">Description 1</h2>
+                        <h2 class="card-description">Description 2</h2>
+                        <h2 class="card-description">Description 3</h2>
+                    </div>
+                </div>
+                <div class="snap-scroll-container">
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/windows/window-before-inside.JPG" alt="Forming Image 1">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/windows/window-pre-cut.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/windows/window-during.jpg" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/windows/window-cut.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/windows/window-installed.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="/images/windows/window-finished-outside.JPG" alt="Forming Image 2">
+                        </div>
+                    </div>
+                    <!-- additional slides -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="contact-container" id="follow-section" data-aos="zoom-in">
+            <h2>Follow Us</h2>
+            <div class="platform" id="platform-1">
+                <h2> Instagram </h2>
+            </div>
+            <div class="platform" id="platform-2">
+                <h2> Facebook </h2>
+            </div>
+            <div class="platform" id="platform-3">
+                <h2> Twitter </h2>
+            </div>
+            <div class="platform" id="platform-4">
+                <h2> Spotify </h2>
+            </div>
+
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="contact-container" id="contact-sections" data-aos="zoom-in">
+
+            <div class="section-contact" id="contact-us-1">
+                <h2>Head Office</h2>
+                <div class="contact-info-container">
+                    <div class="company-info-section" id="info-1">
+                        <!-- Logo -->
+                        <div class="info-icon">
+                            <img src="/images/icons/calendar.png" alt="heart">
+                        </div>
+                        <!-- Description -->
+                        <h2>Booking Inquiries</h2>
+                        <h2>Bryce Norton:</h2>
+                        <h2>+1 (819) 744-7427</h2>
+                    </div>
+
+                    <div class="company-info-section" id="info-2">
+                        <!-- Logo -->
+                        <div class="info-icon">
+                            <img src="/images/icons/phone-call.png" alt="heart">
+                        </div>
+                        <h2>Reach us by Phone</h2>
+                        <h2>+1 (819) 744-7427</h2>
+                        <h2>+1 (613) 894-1616</h2>
+                    </div>
+
+                    <div class="company-info-section" id="info-3">
+                        <!-- Logo -->
+                        <div class="info-icon">
+                            <img src="/images/icons/dollar-icon.png" alt="heart">
+                        </div>
+                        <h2>Estimate Inquiries</h2>
+                        <h2>Bryce Norton</h2>
+                        <h2>+1 (819) 744-7427</h2>
+                    </div>
+
+                    <div class="company-info-section" id="info-4">
+                        <!-- Logo -->
+                        <div class="info-icon">
+                            <img src="/images/icons/marker.png" alt="heart">
+                        </div>
+                        <h2>Pay us a visit</h2>
+                        <h2>500 Rte 200, Russell, ON K4R 1E5</h2>
+                        <h2>Canada</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-contact" id="contact-us-2">
+                <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <!-- Logo -->
+                    <div class="info-icon">
+                        <img src="/images/icons/envelope.png" alt="heart">
+                    </div>
+                    <form class="form" action="https://formspree.io/your-form-endpoint" method="POST">
+                        <div class="flex">
+                            <label>
+                                <input class="input" type="text" placeholder="" required="" name="first_name">
+                                <span>first name</span>
+                            </label>
+
+                            <label>
+                                <input class="input" type="text" placeholder="" required="" name="last_name">
+                                <span>last name</span>
+                            </label>
+                        </div>
+
+                        <label>
+                            <input class="input" type="email" placeholder="" required="" name="email">
+                            <span>email</span>
+                        </label>
+
+                        <label>
+                            <input class="input" placeholder="" type="tel" required="" name="contact_number">
+                            <span>contact number</span>
+                        </label>
+                        <label>
+                            <textarea class="input01" placeholder="" rows="3" required="" name="message"></textarea>
+                            <span>message</span>
+                        </label>
+
+                        <button type="submit" class="fancy">
+                            <span class="top-key"></span>
+                            <span class="text">submit</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Trademark stuff -->
+        <footer class="footer">
+            &copy; 2022 Norton Bros Incorporated. All rights reserved. | Trademark
+        </footer>
+
+        <!-- JS Code for About Us buttons -->
+        <script>
+            const aboutButtons = document.querySelectorAll(".btn");
+            const contentContainer = document.getElementById("content-container");
+            const contentElements = document.querySelectorAll(".content");
+
+            // Hide all content elements by default
+            contentElements.forEach((content) => content.style.display = "none");
+
+            let currentActiveButton = null;
+
+            function showContent(event) {
+                const contentId = event.target.dataset.contentId;
+                const contentElement = document.getElementById(contentId);
+
+                // Remove 'active' class from the currently active button
+                if (currentActiveButton) {
+                    currentActiveButton.classList.remove('active');
+                }
+
+                if (currentActiveButton === event.target) {
+                    contentElements.forEach((content) => content.style.display = "none");
+                    contentContainer.style.maxHeight = "0";
+                    currentActiveButton = null;
+                } else {
+                    contentElements.forEach((content) => content.style.display = "none");
+                    contentElement.style.display = "block";
+                    contentContainer.style.maxHeight = contentElement.scrollHeight + "px";
+
+                    event.target.classList.add('active');
+                    currentActiveButton = event.target;
+                }
+                // Prevent the default behavior of button click
+                event.preventDefault();
+            }
+
+            aboutButtons.forEach((btn) => {
+                btn.addEventListener("click", showContent);
+            });
+        </script>
+
+        <!-- AOS Library for dynamically loading sections as user scrolls -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                AOS.init();
+            });
+        </script>
+
+        <!-- JS Script for setting the navbar appearance on/off landing-section -->
+        <script>
+            const navbar = document.querySelector('.navbar');
+            const landingSection = document.querySelector('.landing-section');
+
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY;
+                const landingSectionHeight = landingSection.offsetHeight;
+
+                if (scrollPosition > landingSectionHeight - navbar.offsetHeight) {
+                    navbar.classList.add('navbar-solid');
+                } else {
+                    navbar.classList.remove('navbar-solid');
+                }
+            });
+        </script>
+
+        <!-- JS Code for automatic scroll to selected section from landing-section -->
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        </script>
+
+        <!-- JS Script to force nav-button animation reset when scrolling away from landing-section -->
+        <script>
+            const initialNavButtonColor = getComputedStyle(document.querySelector('.nav-button')).color;
+
+            function resetNavButtonStyles() {
+                const buttons = document.querySelectorAll('.nav-button');
+                buttons.forEach((button) => {
+                    button.style.color = initialNavButtonColor;
+                    button.style.textDecoration = 'none';
+                    button.blur();
+                });
+            }
+            window.addEventListener('scroll', () => {
+                const landingSectionHeight = document.querySelector('.landing-section').offsetHeight;
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > landingSectionHeight) {
+                    resetNavButtonStyles();
+                }
+            });
+        </script>
+
+        <!-- JS Script for scroll snap cursor -->
+        <script>
+            function handlePointerDown(event) {
+                event.preventDefault();
+                event.currentTarget.setPointerCapture(event.pointerId);
+                startX = event.clientX;
+            }
+
+            function handlePointerUp(event) {
+                event.currentTarget.releasePointerCapture(event.pointerId);
+            }
+
+            function handlePointerMove(event) {
+                if (!event.currentTarget.hasPointerCapture(event.pointerId)) return;
+                const scrollContainer = event.currentTarget;
+                scrollContainer.scrollLeft -= event.clientX - startX;
+                startX = event.clientX;
+            }
+
+            const snapScrollContainer = document.querySelector(".snap-scroll-container");
+            snapScrollContainer.addEventListener("pointerdown", handlePointerDown);
+            snapScrollContainer.addEventListener("pointerup", handlePointerUp);
+            snapScrollContainer.addEventListener("pointercancel", handlePointerUp);
+            snapScrollContainer.addEventListener("pointermove", handlePointerMove);
+
+        </script>
+
+</body>
+
+</html>
