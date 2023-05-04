@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('images/backgrounds/concrete-background-1.jpg');
+    background-image: url('../images/backgrounds/concrete-background-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -350,7 +350,7 @@ p {
 
 .section {
     background-color: #272727;
-    background-image: url('images/backgrounds/grey-poly-background.png');
+    background-image: url('../images/backgrounds/grey-poly-background.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -359,7 +359,7 @@ p {
 }
 
 .why-us {
-    background-image: url('images/backgrounds/poly-background-purple.png');
+    background-image: url('../images/backgrounds/poly-background-purple.png');
     background-color: #272727;
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -370,7 +370,7 @@ p {
 
 .section-contact {
     background-color: #272727;
-    background-image: url('images/backgrounds/poly-background-purple.png');
+    background-image: url('../images/backgrounds/poly-background-purple.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -612,7 +612,7 @@ p {
 /* Social Media Buttons */
 .social-media {
     background-color: #272727;
-    background-image: url('images/backgrounds/instagram-background.png');
+    background-image: url('../images/backgrounds/instagram-background.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -622,7 +622,7 @@ p {
 
 .social-media .platform {
     background-color: #272727;
-    background-image: url('images/backgrounds/facebook-background.png');
+    background-image: url('../images/backgrounds/facebook-background.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -632,7 +632,7 @@ p {
 
 .twitter {
     background-color: #272727;
-    background-image: url('images/backgrounds/twitter-background.png');
+    background-image: url('../images/backgrounds/twitter-background.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -642,7 +642,7 @@ p {
 
 .spotify {
     background-color: #272727;
-    background-image: url('images/backgrounds/spotify.png');
+    background-image: url('../images/backgrounds/spotify.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
