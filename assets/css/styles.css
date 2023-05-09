@@ -883,20 +883,19 @@ p {
     width: 0;
 }
 
+/* ------------------- Breakpoints ------------------- */
 
-/* Small desktop */
-@media (max-width: 992px) {
-    .landing-section h1 {
-        font-size: 15em;
-        margin-top: 2em;
-    }
+/* Breakpoint 5 -> 1200px */
+@media (max-width: 1200px) {
 
-    .slogan {
-        font-size: 5em;
-    }
 }
 
-/* Tablets and large mobile */
+/* Breakpoint 4 -> 992px */
+@media (max-width: 992px) {
+
+}
+
+/* Breakpoint 3 -> 768px */
 @media (max-width: 768px) {
     .landing-section h1 {
         font-size: 10em;
@@ -989,19 +988,7 @@ p {
     
 }
 
-/* 2778x1284 pixels at 458ppi */
-@media only screen
-and (device-width: 428px)
-and (device-height: 926px)
-and (-webkit-device-pixel-ratio: 3) { }
-
-/* 2532x1170 pixels at 460ppi */
-@media only screen
-and (device-width: 390px)
-and (device-height: 844px)
-and (-webkit-device-pixel-ratio: 3) { }
-
-/* Small mobile */
+/* Breakpoint 2 -> 480px */
 @media (max-width: 480px) {
     body, html {
         margin: 0;
@@ -1009,15 +996,14 @@ and (-webkit-device-pixel-ratio: 3) { }
         max-width: 100%;
         overflow-x: hidden;
     }
-    
-    /* Add this rule to any other container elements that might cause overflow */
+
     .container {
         max-width: 100%;
         padding: 0;
     }
 
     .landing-section h1 {
-        font-size: 5em;
+        font-size: 6em;
         margin-top: -0.7em;
     }
 
@@ -1085,6 +1071,14 @@ and (-webkit-device-pixel-ratio: 3) { }
         text-align: center;
     }
 
+    .snap-scroll-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        scroll-padding: 10px;
+    }
+
     .gallery-container {
         padding: 0.3em;
     }
@@ -1136,8 +1130,7 @@ and (-webkit-device-pixel-ratio: 3) { }
     }
 }
 
-@media (max-width: 767px) {
-    .snap-scroll-container {
-        gap: 4px; /* Adjust the gap value for mobile screens */
-    }
+/* Breakpoint 1 -> 320px */
+@media (max-width: 320px) {
+
 }
