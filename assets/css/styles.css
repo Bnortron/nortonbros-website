@@ -953,11 +953,12 @@ p {
         width: 100%;
     }
 
-    .snap-scroll-container img {
+    .image-container img {
         width: 100%;
         height: auto;
+        max-height: 400px;
+        object-fit: cover;
     }
-
 }
 
 /* 2778x1284 pixels at 458ppi */
@@ -996,5 +997,12 @@ and (-webkit-device-pixel-ratio: 3) { }
         font-size: 0.5em;
         text-align: center;
         margin-top: 2em;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
     }
 }
