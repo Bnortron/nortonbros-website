@@ -356,7 +356,7 @@ p {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: c;
+    text-align: center;
 }
 
 .why-us {
@@ -394,24 +394,6 @@ p {
 }
 
 /* ----------------------- about-us section --------------------------- */
-@media (max-width: 768px) {
-    .about-us .content-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-us .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-us .content-image {
-        margin-right: 0;
-        margin-bottom: 16px;
-    }
-}
-
 .about-us {
     display: flex;
     flex-direction: column;
@@ -933,8 +915,30 @@ p {
         justify-content: center;
         gap: 20px;
     }
+
+    .about-us .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us .btn {
+        font-size: 0.7em;
+    }
+
+    .about-us .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us .content-image {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
     .reason {
         flex-direction: column;
+        padding: 2em;
     }
 
     .reason-content {
@@ -942,9 +946,34 @@ p {
         margin-bottom: 20px;
     }
 
-    .snap-scroll-container {
+    .gallery-container {
+        padding: 0.3em;
+    }
+
+    .card {
+        width: 500px;
+        height: 200px;
+        padding: 0.8em;
+    }
+
+    .card h2 {
+        font-size: 1em;
+    }
+
+    .card .card-description {
+        color: #8d8d8d;
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .image-container img {
         width: 100%;
         height: auto;
+        object-fit: contain;
     }
 
     .slide-text {
@@ -953,17 +982,11 @@ p {
         width: 100%;
     }
 
-    .image-container img {
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-        object-fit: cover;
+    .contact-container {
+        display: flex;
+        flex-direction: column;
     }
-
-    .card {
-        width: 200px;
-        height: 350px;
-    }
+    
 }
 
 /* 2778x1284 pixels at 458ppi */
@@ -980,8 +1003,21 @@ and (-webkit-device-pixel-ratio: 3) { }
 
 /* Small mobile */
 @media (max-width: 480px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Add this rule to any other container elements that might cause overflow */
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
     .landing-section h1 {
-        font-size: 6em;
+        font-size: 5em;
         margin-top: -0.7em;
     }
 
@@ -1009,5 +1045,86 @@ and (-webkit-device-pixel-ratio: 3) { }
         height: auto;
         max-height: 250px;
         object-fit: cover;
+    }
+
+    .about-us .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us .btn {
+        font-size: 0.7em;
+    }
+
+    .about-us .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us .content-image {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .reason {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .reason-content {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .gallery-container {
+        padding: 0.3em;
+    }
+
+    .card {
+        width: 500px;
+        height: 250px;
+        padding: 1em;
+    }
+
+    .card h2 {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+
+    .card .card-description {
+        color: #8d8d8d;
+        font-size: 0.6em;
+        font-weight: 400;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .slide-text {
+        font-size: 14px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .company-info-section {
+        font-size: 0.8em;
+    }
+
+    .platform {
+        text-align: ;
     }
 }
