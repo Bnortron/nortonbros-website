@@ -1089,7 +1089,7 @@ and (-webkit-device-pixel-ratio: 3) { }
     }
 
     .card h2 {
-        font-size: 1.2em;
+        font-size: 1em;
         margin-bottom: 2em;
     }
 
@@ -1122,9 +1122,5 @@ and (-webkit-device-pixel-ratio: 3) { }
 
     .company-info-section {
         font-size: 0.8em;
-    }
-
-    .platform {
-        text-align: ;
     }
 }
