@@ -1047,9 +1047,16 @@ and (-webkit-device-pixel-ratio: 3) { }
         object-fit: cover;
     }
 
+    .about-us {
+        padding: 0.1em;
+    }
+
     .about-us .content-container {
         display: flex;
         flex-direction: column;
+        align-content: center;
+        font-size: 0.5em;
+        padding: 0.5em;
     }
 
     .about-us .btn {
@@ -1122,5 +1129,15 @@ and (-webkit-device-pixel-ratio: 3) { }
 
     .company-info-section {
         font-size: 0.8em;
+    }
+
+    .platform {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .snap-scroll-container {
+        gap: 4px; /* Adjust the gap value for mobile screens */
     }
 }
