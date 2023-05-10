@@ -504,26 +504,27 @@
         <script>
             function handlePointerDown(event) {
                 event.preventDefault();
-                event.currentTarget.setPointerCapture(event.pointerId);
-                startX = event.clientX;
+                this.setPointerCapture(event.pointerId);
+                this.startX = event.clientX;
             }
 
             function handlePointerUp(event) {
-                event.currentTarget.releasePointerCapture(event.pointerId);
+                this.releasePointerCapture(event.pointerId);
             }
 
             function handlePointerMove(event) {
-                if (!event.currentTarget.hasPointerCapture(event.pointerId)) return;
-                const scrollContainer = event.currentTarget;
-                scrollContainer.scrollLeft -= event.clientX - startX;
-                startX = event.clientX;
+                if (!this.hasPointerCapture(event.pointerId)) return;
+                this.scrollLeft -= event.clientX - this.startX;
+                this.startX = event.clientX;
             }
 
-            const snapScrollContainer = document.querySelector(".snap-scroll-container");
-            snapScrollContainer.addEventListener("pointerdown", handlePointerDown);
-            snapScrollContainer.addEventListener("pointerup", handlePointerUp);
-            snapScrollContainer.addEventListener("pointercancel", handlePointerUp);
-            snapScrollContainer.addEventListener("pointermove", handlePointerMove);
+            const snapScrollContainers = document.querySelectorAll(".snap-scroll-container");
+            snapScrollContainers.forEach((container) => {
+                container.addEventListener("pointerdown", handlePointerDown);
+                container.addEventListener("pointerup", handlePointerUp);
+                container.addEventListener("pointercancel", handlePointerUp);
+                container.addEventListener("pointermove", handlePointerMove);
+            });
 
         </script>
 
