@@ -366,7 +366,6 @@ p {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: c;
 }
 
 .section-contact {
@@ -1036,7 +1035,7 @@ social-media-button:active {
 
     .container {
         max-width: 100%;
-        padding: 0;
+        padding: 1em;
     }
 
     .landing-section h1 {
@@ -1125,7 +1124,7 @@ social-media-button:active {
     .card {
         width: 200px;
         height: 250px;
-        padding: 1em;
+        padding: 0.1em;
     }
 
     .card h2 {
@@ -1159,6 +1158,8 @@ social-media-button:active {
         display: flex;
         flex-direction: column;
         text-align: center;
+        width: 90%;
+        margin: 1em;
     }
 
     .company-info-section {
@@ -1168,9 +1169,8 @@ social-media-button:active {
     .platform {
         text-align: center;
     }
-}
 
-/* Breakpoint 1 -> 320px */
-@media (max-width: 320px) {
-
+    .section {
+        margin: 1em;
+    }
 }
