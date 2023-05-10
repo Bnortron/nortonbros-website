@@ -448,9 +448,9 @@ p {
 
 /* -------------- Forming/Footings/Repairs/Windows sections ---------------- */
 .content-container {
-    width: 100%;
+    width: 250px;
     max-height: 0;
-    overflow: hidden;
+    overflow: scroll;
     transition: max-height 0.3s ease;
     flex-grow: 1;
     margin: 0;
@@ -535,7 +535,7 @@ p {
 }
 
 .card {
-    width: 250px;
+    width: 200px;
     height: 400px;
     background: #1a1a1a;
     position: relative;
@@ -1099,7 +1099,6 @@ social-media-button:active {
 
     .reason {
         flex-direction: column;
-        padding: 2em;
     }
 
     .reason-content {
@@ -1120,7 +1119,7 @@ social-media-button:active {
 
 
     .gallery-container {
-        padding: 0.3em;
+        padding: 1em;
     }
 
     .card {
