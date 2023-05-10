@@ -592,48 +592,85 @@ p {
     border-radius: 10px;
 }
 
-/* Social Media Buttons */
-.social-media {
+/* ----------- Social Media Section ------------ */
+.platform {
     background-color: #272727;
-    background-image: url('../../images/backgrounds/instagram-background.png');
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin-bottom: 30px;
-    text-align: c;
+    text-align: center; /* Corrected from 'c' to 'center' */
 }
 
-.social-media .platform {
-    background-color: #272727;
+.instagram {
+    background-image: url('../../images/backgrounds/instagram-background.png');
+}
+
+.facebook {
     background-image: url('../../images/backgrounds/facebook-background.png');
-    padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    margin-bottom: 30px;
-    text-align: c;
 }
 
 .twitter {
-    background-color: #272727;
     background-image: url('../../images/backgrounds/twitter-background.png');
-    padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    margin-bottom: 30px;
-    text-align: c;
 }
 
 .spotify {
-    background-color: #272727;
     background-image: url('../../images/backgrounds/spotify.png');
-    padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    margin-bottom: 30px;
-    text-align: c;
 }
 
-/* Contact Us Section */
+.social-media-logo {
+    filter: invert(1);
+}
+
+.social-media-button {
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgb(52, 52, 52);
+    --btn-color: rgb(52, 52, 52);
+    border: .2em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+social-media-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+social-media-button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+social-media-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
+
+/* --------------- Contact Us Section --------------- */
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -1075,10 +1112,10 @@ p {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        gap: 12px;
-        -webkit-gap: 12px; /* Add vendor prefix for WebKit browsers */
-        -moz-gap: 12px; /* Add vendor prefix for Firefox */
-        scroll-padding: 10px;
+        gap: 2px;
+        -webkit-gap: 2px; /* Add vendor prefix for WebKit browsers */
+        -moz-gap: 2px; /* Add vendor prefix for Firefox */
+        scroll-padding: 5px;
     }
 
 
@@ -1122,6 +1159,7 @@ p {
     .contact-container {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .company-info-section {
