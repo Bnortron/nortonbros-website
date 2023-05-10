@@ -1075,9 +1075,12 @@ p {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        gap: 10px;
+        gap: 12px;
+        -webkit-gap: 12px; /* Add vendor prefix for WebKit browsers */
+        -moz-gap: 12px; /* Add vendor prefix for Firefox */
         scroll-padding: 10px;
     }
+
 
     .gallery-container {
         padding: 0.3em;
