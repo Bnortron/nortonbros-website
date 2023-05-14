@@ -407,6 +407,45 @@ p {
     height: auto;
 }
 
+.content-container {
+    width: 90%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.content {
+    display: none;
+    padding: 0;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content.active {
+    display: block;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 15px;
+    float: left;
+    filter: grayscale(50%);
+}
+
 .button-container {
     display: flex;
     justify-content: space-between;
@@ -447,62 +486,22 @@ p {
     font-weight: 400;
 }
 
-
 /* -------------- Forming/Footings/Repairs/Windows sections ---------------- */
-.content-container {
-    width: 90%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    flex-grow: 1;
-    padding: 1em;
-}
-
-.content {
-    display: none;
-    padding: 0;
-    background-color: rgb(22, 22, 22);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 10px;
-    padding: 10px;
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    overflow-y: auto;
-}
-
-.content.active {
-    display: block;
-}
-
-.content-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-right: 15px;
-    float: left;
-    filter: grayscale(50%);
-}
-
 .gallery-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch; /* Align-items stretch will make the children of this container take full height */
+    align-items: stretch;
     background-color: #242424;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 1em;
-    height: 100%; /* Make the gallery container take full height of its parent */
+    height: 100%;
 }
 
 .snap-scroll-container {
     display: flex;
-    flex-grow: 1; /* This makes the snap scroll container grow to take up remaining space */
+    flex-grow: 1;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 12px;
@@ -513,7 +512,7 @@ p {
     flex: 0 0 auto;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 100%; /* Make the slide take full height of its parent */
+    height: 100%;
 }
 
 .gallery-container .slide-text {
@@ -523,14 +522,14 @@ p {
 
 .image-container {
     width: 100%;
-    height: 400px;  /* Adjust the height as needed */
-    overflow: hidden;  /* This will crop any part of the image that overflows the container */
+    height: 400px;
+    overflow: hidden;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* This will make the image cover the entire container while maintaining its aspect ratio */
+    object-fit: cover;
 }
 
 .snap-scroll-container {
@@ -544,6 +543,9 @@ p {
     align-items: center;
 }
 
+.snap-scroll-container .slide:last-child {
+    padding-right: 10px;  /* Adjust as needed */
+}
 
 .card {
     width: 200px;
@@ -652,7 +654,7 @@ p {
     transition: all 0.3s;
 }
 
-social-media-button::after {
+.social-media-button::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -661,12 +663,12 @@ social-media-button::after {
     height: 100%;
     width: 100%;
     background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
+    filter: blur(1em);
+    opacity: 0;
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
-social-media-button:hover {
+.social-media-button:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
@@ -674,7 +676,7 @@ social-media-button:hover {
     inset 0 0 .75em .25em var(--glow-color);
 }
 
-social-media-button:active {
+.social-media-button:active {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 .5em .25em var(--glow-color);
