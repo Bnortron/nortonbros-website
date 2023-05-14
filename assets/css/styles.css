@@ -1159,6 +1159,13 @@ p {
         object-fit: cover;
     }
 
+    .snap-scroll-container::after {
+        content: "";
+        width: 10px;  /* Adjust as needed */
+        flex: 0 0 auto;
+    }
+
+
     .card {
         width: 200px;
         height: 250px;
