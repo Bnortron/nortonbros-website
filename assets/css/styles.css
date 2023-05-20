@@ -345,7 +345,7 @@ p {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 20px 0;
     display: flex;
     justify-content: center;
@@ -359,7 +359,7 @@ p {
     border-radius: 4px;
     margin-bottom: 30px;
     text-align: center;
-    width: 90%;
+    width: 80%;
 }
 
 .why-us {
@@ -369,7 +369,7 @@ p {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     margin-bottom: 30px;
-    width: 90%;
+    width: 80%;
 }
 
 .section-contact {
@@ -541,6 +541,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .snap-scroll-container .slide:last-child {
@@ -548,8 +549,8 @@ p {
 }
 
 .card {
-    width: 200px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background: #1a1a1a;
     position: relative;
     display: flex;
@@ -560,19 +561,20 @@ p {
     justify-items: center;
     flex-direction: column;
     align-items: center;
+    padding: 0.5em;
 }
 
 .card h2 {
     z-index: 1;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: inherit;
     text-align: center;
 }
 
 .card .card-description {
     color: #8d8d8d;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -1130,23 +1132,19 @@ p {
         text-align: center;
     }
 
-    /* Make the snap-scroll-container a horizontal flex container */
     .snap-scroll-container {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        scroll-padding: 0 50%;  /* Center the snap points */
+        scroll-padding: 0 50%;
     }
 
-    /* Ensure each slide is treated as a single unit for snapping */
     .slide {
         flex: 0 0 auto;
         scroll-snap-align: center;
-        width: 100%;  /* This could be adjusted to suit your design */
+        width: 100%;
     }
 
-    /* This is to ensure that images take up the full space of their containers,
-       adjust according to your needs */
     .image-container {
         width: 100%;
         height: 100%;
@@ -1161,10 +1159,13 @@ p {
 
     .snap-scroll-container::after {
         content: "";
-        width: 10px;  /* Adjust as needed */
+        width: 10px;
         flex: 0 0 auto;
     }
 
+    .snap-scroll-container .slide:last-child {
+        padding-right: 10px;
+    }
 
     .card {
         width: 200px;
@@ -1173,7 +1174,7 @@ p {
     }
 
     .card h2 {
-        font-size: 1em;
+        font-size: 1.5em;
         margin-bottom: 2em;
     }
 
@@ -1206,6 +1207,13 @@ p {
     }
 
     .section {
-        margin: 1em;
+        margin: 0.5em;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 1em;
     }
 }
