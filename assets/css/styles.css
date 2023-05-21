@@ -1164,7 +1164,7 @@ p {
     }
 
     .snap-scroll-container .slide:last-child {
-        padding-right: 10px;
+        width: 100px;
     }
 
     .card {
